@@ -1,0 +1,57 @@
+.author-nick {
+  background: green; }
+
+.author-aimee {
+  background: blue; }
+
+.author-dan {
+  background: red; }
+
+.author-drew {
+  background: yellow; }
+
+.content {
+  border: 1px solid #ccc;
+  color: #efefef;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .content h2 {
+    font-size: 3em;
+    margin: 20px 0; }
+
+.authors-nick {
+  background: url(nick.jpg); }
+
+.authors-aimee {
+  background: url(aimee.jpg); }
+
+.authors-dan {
+  background: url(dan.jpg); }
+
+.authors-drew {
+  background: url(drew.jpg); }
+
+.authors-tim {
+  background: url(tim.jpg); }
+
+.author {
+  float: left;
+  width: 20%; }
+
+header {
+  background: #fff; }
+
+.btn-a, .btn-b {
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.btn-a {
+  background: #777; }
+
+.btn-b {
+  background: #ff0; }
+
+/*# sourceMappingURL=application.css.map */

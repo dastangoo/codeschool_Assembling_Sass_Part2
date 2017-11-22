@@ -1,0 +1,61 @@
+$authors: nick aimee dan drew tim
+$colors: green blue red yellow
+$designers: jason, justin, tim
+$authors1: nick aimee
+$authors2: dan drew
+$theme: light
+
+
+// join($authors1, $authors2) 
+// index($authors, dan) // 3
+// index($authors, tim) // false
+// nth($authors, 3)
+$author-style: zip($authors, $colors)
+@each $a in $author-style
+  .author-#{nth($a, 1)}
+    background: nth($a, 2)
+=box-sizing($x)
+  -webkit-box-sizing: $x
+  -moz-box-sizing: $x
+  box-sizing: $x
+
+.content
+  border: 1px solid #ccc
+  // color: lighten(#eee, 7%)
+  color: scale-color(#eee, $lightness: 7%)
+  padding: 20px
+  h2
+    font-size: 3em
+    margin: 20px 0
+  +box-sizing(border-box)
+    
+@each $a in $authors
+  .authors-#{$a}
+    background: url(#{$a}.jpg)
+
+// length($authors) 
+// append($authors, tim)
+
+.author
+  float: left
+  width: 100%/length($authors)
+
+header
+  // @if $theme == dark
+  //   background: #000
+  // @else
+  //   background: #fff
+  background: if($theme == dark, #000, #fff)
+  
+%btn
+  border: 1px solid #ccc
+  font-size: 1em
+  text-transform: uppercase
+  b
+    color: #000
+.btn-a
+  @extend %btn
+  background: #777
+.btn-b
+  @extend %btn
+  background: #ff0

@@ -1,0 +1,14 @@
+@mixin box-sizing($x) {
+  -webkit-box-sizing: $x;
+  -moz-box-sizing: $x;
+  box-sizing: $x;
+}
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  h2 {
+    font-size: 3em;
+    margin: 20px 0;
+  }
+  @include box-sizing(border-box);
+}

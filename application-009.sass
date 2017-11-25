@@ -1,0 +1,14 @@
+@import "compass"
+
+@function button-text($bg) {
+  @return contrast-color($bg, #333, #eee, 50%);
+}
+  
+
+.btn-a
+  background: #222
+  color: button-text(#222)
+
+.btn-b
+  background: #aaa
+  color: button-text(#aaa)

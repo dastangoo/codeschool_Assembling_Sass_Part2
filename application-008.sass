@@ -1,0 +1,12 @@
+@import "compass"
+=caret($point)
+  $opposite: opposite-position($point)
+  border: 100px solid transparent
+  border-#{$opposite}: 100px solid #000
+  border-#{$point}: 0
+  height: 0
+  width: 0
+
+.caret
+  // +caret(top)
+  +caret(left)

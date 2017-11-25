@@ -3,11 +3,10 @@ Error: File to import not found or unreadable: compass.
         on line 1 of application.sass
 
 1: @import "compass"
-2: @import "compass/layout"
-3: @import "compass/reset"
-4: 
-5: .content
-6:   +box-sizing(border-box)
+2: 
+3: %group,
+4: .group
+5:   +clearfix
 
 Backtrace:
 application.sass:1
@@ -48,4 +47,4 @@ application.sass:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A         on line 1 of application.sass\A \A 1: @import \"compass\"\A 2: @import \"compass/layout\"\A 3: @import \"compass/reset\"\A 4: \A 5: .content\A 6:   +box-sizing(border-box)"; }
+  content: "Error: File to import not found or unreadable: compass.\A         on line 1 of application.sass\A \A 1: @import \"compass\"\A 2: \A 3: %group,\A 4: .group\A 5:   +clearfix"; }

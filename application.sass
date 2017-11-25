@@ -1,0 +1,28 @@
+@import "compass"
+// @import "icons/*.png"
+$icons: sprite-map("icons/*.png")
+// $icon-names: cancel next warning
+// +all-icons-sprites
+
+i
+  background: $icons
+  display: inline-block
+@each $i in sprite_names($icons)
+  .icn-#{$i}
+// .icn-cancel
+//   background-position: sprite-position($icons, cancel)
+//   +sprite-dimensions($icons, cancel)
+// .icn-next
+//   background-position: sprite-position($icons, next)
+//   +sprite-dimensions($icons, next)
+// .icn-warning
+//   background-position: sprite-position($icons, warning)
+//   +sprite-dimensions($icons, warning)
+
+// @each $i in $icon-names
+// @each $i in $icon-names
+  // .icn-#{$i}
+    // background-position: sprite-position($icons, $i)
+    // +sprite-dimensions($icons, $i)
+    
+    
